@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiết Bài tập — Digital Portfolio</title>
+
+  <!-- Google Fonts (đồng bộ với index.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+
+  <!-- CSS chung & CSS riêng trang detail -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/detail.css" />
+</head>
+<body>
+
+  <!-- ░░ GRAIN OVERLAY ░░ -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR — đồng bộ index.html
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Digital Portfolio</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+        <li><a href="index.html#projects" class="nav-link">Bài tập</a></li>
+        <li><a href="index.html#learning-journal" class="nav-link">Nhật ký học tập</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════ -->
+  <main class="detail-main">
+
+    <!-- Trang trí nền -->
+    <div class="detail-deco detail-deco--tl" aria-hidden="true"></div>
+    <div class="detail-deco detail-deco--tr" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <!-- ── NÚT QUAY LẠI ────────────────────────── -->
+      <div class="detail-nav-row" data-aos>
+        <a href="index.html#projects" class="back-btn" aria-label="Quay lại danh sách bài tập">
+          <span class="back-arrow" aria-hidden="true">←</span>
+          <span class="back-label">Quay lại danh sách</span>
+        </a>
+
+        <!-- Breadcrumb -->
+        <nav class="detail-breadcrumb" aria-label="Đường dẫn">
+          <a href="index.html" class="crumb">Trang chủ</a>
+          <span class="crumb-sep" aria-hidden="true">◇</span>
+          <a href="index.html#projects" class="crumb">Bài tập</a>
+          <span class="crumb-sep" aria-hidden="true">◇</span>
+          <span class="crumb crumb--current" id="breadcrumbTitle">Đang tải…</span>
+        </nav>
+      </div>
+
+      <!-- ── HERO BÀI TẬP ────────────────────────── -->
+      <header class="detail-hero" data-aos data-aos-delay="60">
+
+        <!-- Số thứ tự lớn (trang trí) -->
+        <div class="detail-number" id="detailNumber" aria-hidden="true">01</div>
+
+        <div class="detail-hero-content">
+          <!-- Danh mục -->
+          <span class="detail-category-tag" id="detailCategory">Danh mục</span>
+
+          <!-- Tiêu đề chính -->
+          <h1 class="detail-title" id="detailTitle">
+            Đang tải nội dung…
+          </h1>
+
+          <!-- Đường kẻ trang trí -->
+          <div class="detail-title-rule" aria-hidden="true">
+            <span></span>
+            <span class="rule-diamond">◆</span>
+            <span></span>
+          </div>
+        </div>
+
+      </header>
+
+      <!-- ── LAYOUT NỘI DUNG CHÍNH ──────────────── -->
+      <div class="detail-content-layout">
+
+        <!-- ░░ CỘT TRÁI: THÔNG TIN & QUY TRÌNH ░░ -->
+        <div class="detail-col-main">
+
+          <!-- Block 1: Mục tiêu học tập -->
+          <section class="detail-block detail-block--objective" data-aos data-aos-delay="100" aria-labelledby="objectiveHeading">
+            <div class="block-label">
+              <span class="block-label-icon" aria-hidden="true">🎯</span>
+              <h2 class="block-label-text" id="objectiveHeading">Mục tiêu học tập</h2>
+            </div>
+            <div class="block-body">
+              <p class="objective-text" id="detailObjective">Đang tải…</p>
+            </div>
+          </section>
+
+          <!-- Đường phân cách mềm -->
+          <div class="section-divider" aria-hidden="true">
+            <span></span><span class="divider-dot">◇</span><span></span>
+          </div>
+
+          <!-- Block 2: Quy trình thực hiện -->
+          <section class="detail-block detail-block--process" data-aos data-aos-delay="140" aria-labelledby="processHeading">
+            <div class="block-label">
+              <span class="block-label-icon" aria-hidden="true">🗂</span>
+              <h2 class="block-label-text" id="processHeading">Quy trình thực hiện</h2>
+            </div>
+            <div class="block-body">
+              <!-- Các bước sẽ được render động từ JS -->
+              <div class="process-steps" id="detailProcessSteps" role="list">
+                <!-- JS sẽ inject các .process-step vào đây -->
+              </div>
+            </div>
+          </section>
+
+        </div><!-- /detail-col-main -->
+
+        <!-- ░░ CỘT PHẢI: SIDEBAR THÔNG TIN NHANH ░░ -->
+        <aside class="detail-col-side" aria-label="Thông tin nhanh về bài tập">
+
+          <div class="sidebar-card" data-aos data-aos-delay="180">
+            <h3 class="sidebar-card-title">Thông tin bài tập</h3>
+
+            <dl class="sidebar-meta-list">
+              <div class="sidebar-meta-item">
+                <dt>Mã bài tập</dt>
+                <dd id="sidebarId">—</dd>
+              </div>
+              <div class="sidebar-meta-item">
+                <dt>Danh mục</dt>
+                <dd id="sidebarCategory">—</dd>
+              </div>
+              <div class="sidebar-meta-item">
+                <dt>Loại sản phẩm</dt>
+                <dd id="sidebarOutputType">—</dd>
+              </div>
+            </dl>
+
+            <!-- Điều hướng bài tập trước / sau -->
+            <div class="sidebar-nav-btns" id="sidebarNav">
+              <!-- Inject bởi JS -->
+            </div>
+          </div>
+
+        </aside>
+
+      </div><!-- /detail-content-layout -->
+
+      <!-- ── KHỐI SẢN PHẨM ĐẦU RA ──────────────── -->
+      <section class="detail-output-section" data-aos data-aos-delay="160" aria-labelledby="outputHeading" id="outputSection">
+        <div class="block-label block-label--centered">
+          <span class="block-label-icon" aria-hidden="true">🖼</span>
+          <h2 class="block-label-text" id="outputHeading">Sản phẩm cuối cùng</h2>
+        </div>
+
+        <p class="output-description" id="detailOutputDesc">Đang tải…</p>
+
+        <!-- Khu vực hình ảnh / liên kết -->
+        <div class="output-gallery" id="outputGallery" role="list">
+          <!-- Inject bởi JS -->
+        </div>
+
+      </section>
+
+      <!-- ── ĐIỀU HƯỚNG CUỐI TRANG ──────────────── -->
+      <div class="detail-footer-nav" data-aos>
+        <a href="index.html#projects" class="footer-back-btn">
+          <span aria-hidden="true">←</span> Xem tất cả bài tập
+        </a>
+      </div>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER — đồng bộ index.html
+  ═══════════════════════════════════════ -->
+   <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="logo-mark">✦</span>
+        <span class="footer-brand-name">Digital Portfolio</span>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2025–2026 Lê Thị Uyên ·  Trường Đại học Việt Nhật
+        </p>
+        <p class="footer-integrity">
+          <span class="integrity-icon">⚖</span>
+          Mọi nội dung trong portfolio này tuân thủ nguyên tắc liêm chính học thuật.
+          AI được sử dụng như công cụ hỗ trợ, không thay thế tư duy và sáng tạo cá nhân.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       SCRIPT — ES Module
+  ═══════════════════════════════════════ -->
+  <script type="module" src="js/detail.js"></script>
+
+</body>

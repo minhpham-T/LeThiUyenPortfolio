@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Portfolio — Nhập môn Công nghệ số & AI</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ░░ GRAIN OVERLAY ░░ -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Digital Portfolio</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Trang chủ</a></li>
+        <li><a href="#projects" class="nav-link">Bài tập</a></li>
+        <li><a href="#learning-journal" class="nav-link">Nhật ký học tập</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO — PROFILE INTRODUCTION
+    ═══════════════════════════════════════ -->
+    <header class="hero-section" id="about">
+      <!-- Trang trí nền -->
+      <div class="hero-deco hero-deco--tl" aria-hidden="true"></div>
+      <div class="hero-deco hero-deco--br" aria-hidden="true"></div>
+      <div class="hero-deco hero-deco--line" aria-hidden="true"></div>
+
+      <div class="container">
+
+        <!-- ── PHẦN 1: ẢNH + THÔNG TIN CƠ BẢN ── -->
+        <div class="profile-top">
+
+          <!-- Cột ảnh chân dung -->
+          <div class="profile-photo-col" data-aos>
+            <div class="profile-photo-frame">
+              <div class="photo-ring photo-ring--outer" aria-hidden="true"></div>
+              <div class="photo-ring photo-ring--inner" aria-hidden="true"></div>
+              <img
+                src="images/mockups/anhchandung.jpg"
+                alt="Ảnh chân dung Trần Ngọc Phương Linh"
+                class="profile-photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <!-- Fallback monogram nếu ảnh chưa có -->
+              <div class="profile-monogram" aria-hidden="true" style="display:none;">L</div>
+              <!-- Huy hiệu nhỏ góc dưới phải -->
+              <div class="photo-badge" aria-label="Ngành Ngôn ngữ Anh">
+                <span>🌿</span>
+              </div>
+            </div>
+
+            <!-- Thông tin nhanh bên dưới ảnh -->
+            <div class="profile-quick-info">
+              <p class="quick-name">Lê Thị Uyên</p>
+              <p class="quick-major">Quốc tế học - Đổi mới và Phát triển toàn cầu (VJU)</p>
+              <p class="quick-subinfo">Mã sinh viên: 25117121</p>
+              <p class="quick-subinfo">Lớp học phần: VNU1001_VJU2025</p>
+              <div class="quick-divider" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Cột giới thiệu chính -->
+          <div class="profile-intro-col" data-aos data-aos-delay="120">
+            <p class="hero-eyebrow">Nhập môn Công nghệ số &amp; Ứng dụng Trí tuệ nhân tạo</p>
+
+            <h1 class="hero-name">
+              Xin chào, tôi là<br>
+              <em>Lê Thị Uyên</em> <span class="name-wave" aria-hidden="true">✦</span>
+            </h1>
+
+            <div class="hero-divider" aria-hidden="true">
+              <span></span><span class="divider-diamond">◆</span><span></span>
+            </div>
+
+            <p class="hero-bio">
+              Tôi là sinh viên chuyên ngành <strong>Quốc tế học - Đổi mới và Phát triển toàn cầu</strong> tại <strong>Trường Đại học Việt Nhật (VJU), ĐHQGHN</strong>. 
+              Được học tập trong môi trường giao thoa văn hóa Việt - Nhật, tôi luôn khao khát tìm kiếm các giải pháp đổi mới sáng tạo để giải quyết những thách thức mang tính toàn cầu và thúc đẩy các 
+              Mục tiêu Phát triển Bền vững (SDGs).
+            </p>
+
+            <p class="hero-bio">
+              Bước vào kỷ nguyên số, tôi nhận ra rằng các vấn đề vĩ mô như quan hệ quốc tế, kinh tế tuần hoàn hay chính sách công 
+              không còn tách rời dòng chảy của công nghệ. Đối với tôi, <strong>Trí tuệ Nhân tạo (AI)</strong> và các <strong>công cụ số</strong> 
+              không chỉ là kỹ năng bổ trợ, mà là 'kính hiển vi' giúp phân tích dữ liệu toàn cầu và là 'cầu nối' 
+              tối ưu hóa sự hợp tác xuyên biên giới.
+            </p>
+
+            <p class="hero-bio">
+              Môn học này đã thay đổi tư duy của tôi: AI không thay thế bộ óc chiến lược của một nhà nghiên cứu, 
+              nhưng nó sẽ khuếch đại năng lực của những ai biết đặt câu hỏi đúng, 
+              tư duy phản biện và sử dụng công nghệ một cách có trách nhiệm.
+            </p>
+
+            <!-- Meta chips -->
+            <div class="hero-meta">
+              <div class="meta-chip">
+                <span class="chip-icon">🎓</span>
+                <span>ĐH Việt Nhật – ĐHQGHN</span>
+              </div>
+              <div class="meta-chip">
+                <span class="chip-icon">📚</span>
+                <span>6 Bài tập thành phần</span>
+              </div>
+              <div class="meta-chip">
+                <span class="chip-icon">✨</span>
+                <span>AI-assisted Learning</span>
+              </div>
+              <div class="meta-chip">
+                <span class="chip-icon">🌐</span>
+                <span>Tiếng Anh · Tiếng Nhật</span>
+              </div>
+            </div>
+          </div>
+        </div><!-- /profile-top -->
+
+        <!-- ── PHẦN 2: BA CỘT CHI TIẾT ── -->
+        <div class="profile-details-grid">
+
+          <!-- Sở thích & Cá tính -->
+          <div class="profile-detail-card" data-aos data-aos-delay="0">
+            <div class="detail-icon" aria-hidden="true">🌸</div>
+            <h2 class="detail-title">Sở thích &amp; Cá tính</h2>
+            <ul class="detail-list">
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span><strong>Theo dõi thời sự quốc tế</strong>: Từ các hiệp định thương mại song phương đến các sáng kiến xanh toàn cầu. 
+                  Đây không chỉ là thói quen giải trí mà còn là nguồn tư liệu thực tiễn sống động cho ngành học của tôi.</span>
+              </li>
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span><strong>Giao lưu đa văn hóa</strong>: Tôi tích cực tham gia các mạng lưới thanh niên Việt - Nhật để rèn luyện tư duy cởi mở, góc nhìn đa chiều và sự thấu cảm sắc sảo trong việc giải quyết các vấn đề xã hội.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mục tiêu học tập -->
+          <div class="profile-detail-card profile-detail-card--accent" data-aos data-aos-delay="120">
+            <div class="detail-icon" aria-hidden="true">🎯</div>
+            <h2 class="detail-title">Mục tiêu học tập</h2>
+            <ul class="detail-list">
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span>Đạt chứng chỉ <strong>IELTS 7.5+</strong> và <strong>JLPT N3+</strong> trước năm ba để mở rộng cơ hội tham gia các chương trình trao đổi sinh viên tại các trường đại học đối tác ở Nhật Bản và quốc tế.</span>
+              </li>
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span>Xây dựng năng lực <strong>phân tích chính sách và nghiên cứu phát triển</strong> — đặc biệt trong 
+                  việc đánh giá các mục tiêu phát triển bền vững (SDGs) và các xu hướng kinh tế - xã hội 
+                  toàn cầu.</span>
+              </li>
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span>Ứng dụng <strong>tư duy hệ thống và công nghệ (Data/AI)</strong> vào giải quyết các bài toán phát triển — tích hợp các công cụ kỹ thuật số hiện đại để tối ưu hóa quy trình quản lý dự án và đổi mới sáng tạo.</span>
+              </li>
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span>Hoàn thành chương trình đại học với <strong>GPA ≥ 3.6/4.0</strong> 
+                và có ít nhất một công trình nghiên cứu khoa học sinh viên về chủ đề đổi mới toàn cầu được nghiệm thu hoặc công bố.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mục tiêu Portfolio -->
+          <div class="profile-detail-card" data-aos data-aos-delay="240">
+            <div class="detail-icon" aria-hidden="true">💼</div>
+            <h2 class="detail-title">Mục tiêu Portfolio này</h2>
+            <ul class="detail-list">
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span><strong>Thể hiện năng lực số</strong> — minh chứng cụ thể cho các kỹ năng 
+                đã tích lũy qua từng bài tập: từ quản lý tệp tin đến viết Prompt AI, 
+                không dừng lại ở mức lý thuyết.</span>
+              </li>
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span><strong>Lưu trữ hành trình học tập</strong> — mỗi sản phẩm trong portfolio 
+                là một dấu mốc thời gian, để sau này nhìn lại tôi có thể thấy mình đã 
+                bước đi từ đâu.</span>
+              </li>
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span><strong>Chia sẻ và kết nối</strong> — portfolio này là không gian mở, 
+                có thể truy cập và chia sẻ dễ dàng với giảng viên, bạn bè và 
+                trong tương lai — với nhà tuyển dụng.</span>
+              </li>
+              <li>
+                <span class="list-dot" aria-hidden="true">◇</span>
+                <span><strong>Thực hành liêm chính học thuật</strong> — mọi nội dung đều 
+                được ghi rõ quá trình thực hiện, nguồn tài liệu tham khảo và 
+                mức độ hỗ trợ của AI, đảm bảo tính minh bạch tuyệt đối.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /profile-details-grid -->
+
+        <!-- ── ĐỊNH HƯỚNG TƯƠNG LAI — dải ngang nổi bật ── -->
+        <div class="profile-vision" data-aos>
+          <div class="vision-label" aria-hidden="true">Định hướng phát triển</div>
+          <blockquote class="vision-quote">
+            <p>
+              Trong năm năm tới, tôi hướng đến việc trở thành một <strong>chuyên gia điều phối dự án phát triển 
+              và đổi mới sáng tạo</strong> — người có khả năng kết nối các nguồn lực quốc tế và áp dụng tư duy công nghệ 
+              để giải quyết các vấn đề thực tiễn. Tôi tin rằng sự kết hợp giữa góc nhìn đa chiều của khoa 
+              học xã hội, sự thấu hiểu văn hóa và tư duy thuật toán, logic của thời đại số sẽ tạo ra những
+              giải pháp phát triển bền vững mà các phương pháp tiếp cận truyền thống khó có thể đạt được.
+            </p>
+          </blockquote>
+          <div class="vision-milestones">
+            <div class="milestone">
+              <span class="milestone-year">2026</span>
+              <span class="milestone-text">Nâng cao ngoại ngữ (IELTS/JLPT) • Đạt chứng chỉ cơ bản về Phân tích dữ liệu/AI ứng dụng trong quản lý.</span>
+            </div>
+            <div class="milestone-arrow" aria-hidden="true">→</div>
+            <div class="milestone">
+              <span class="milestone-year">2027</span>
+              <span class="milestone-text">Trao đổi sinh viên tại Đại học đối tác (Nhật Bản/Quốc tế) • Tham gia các mạng lưới thanh niên toàn cầu.</span>
+            </div>
+            <div class="milestone-arrow" aria-hidden="true">→</div>
+            <div class="milestone">
+              <span class="milestone-year">2028</span>
+              <span class="milestone-text">Nghiên cứu chuyên sâu về các mô hình đổi mới sáng tạo hoặc dự án phát triển cộng đồng</span>
+            </div>
+            <div class="milestone-arrow" aria-hidden="true">→</div>
+            <div class="milestone">
+              <span class="milestone-year">2029</span>
+              <span class="milestone-text">Tốt nghiệp Xuất sắc • Trở thành chuyên viên tại các tổ chức phi chính phủ (NGO), tập đoàn đa quốc gia hoặc cơ quan ngoại giao.</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </header>
+
+    <!-- ═══════════════════════════════════════
+         PROJECTS GRID
+    ═══════════════════════════════════════ -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-header" data-aos>
+          <p class="section-eyebrow">Tuyển tập bài tập</p>
+          <h2 class="section-title">Các Dự án <em>Thành phần</em></h2>
+          <p class="section-subtitle">
+            Sáu bài tập, sáu góc nhìn khác nhau về thế giới công nghệ số.
+            Nhấn vào bất kỳ thẻ nào để xem chi tiết quá trình thực hiện.
+          </p>
+        </div>
+
+        <!-- Cards được render động bởi js/main.js -->
+        <div class="projects-grid" id="projectsGrid" role="list">
+          <!-- Loading placeholder — sẽ bị xóa khi JS chạy xong -->
+          <p class="grid-loading" aria-live="polite">Đang tải bài tập…</p>
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         LEARNING JOURNAL
+    ═══════════════════════════════════════ -->
+    <section class="journal-section" id="learning-journal">
+      <div class="journal-bg-deco" aria-hidden="true"></div>
+      <div class="container">
+
+        <div class="section-header section-header--light" data-aos>
+          <p class="section-eyebrow section-eyebrow--light">Góc nhìn cá nhân</p>
+          <h2 class="section-title section-title--light">Nhật ký <em>Học tập</em></h2>
+        </div>
+
+        <div class="journal-grid">
+
+          <!-- Block 1 -->
+          <div class="journal-card journal-card--primary" data-aos>
+            <div class="journal-icon" aria-hidden="true">🌱</div>
+            <h3 class="journal-card-title">Những gì tôi đã học được</h3>
+            <p class="journal-card-text">
+              Trước khi bắt đầu môn học này, tôi nghĩ "công nghệ số" chỉ là về điện thoại và mạng xã hội.
+              Nhưng sáu bài tập đã mở ra trước mắt tôi một bức tranh rộng lớn hơn nhiều —
+              từ cách tổ chức dữ liệu khoa học, tìm kiếm tài liệu học thuật một cách có chiến lược,
+              đến việc <strong>giao tiếp với AI như một người đồng nghiệp</strong> thay vì một công cụ tra cứu đơn thuần.
+            </p>
+            <p class="journal-card-text">
+              Kỹ năng viết Prompt đã thay đổi cách tôi tiếp cận bài tập hoàn toàn.
+              Tôi học được rằng chất lượng câu hỏi quyết định chất lượng câu trả lời —
+              điều này không chỉ đúng với AI mà còn đúng với cả cuộc sống.
+            </p>
+          </div>
+
+          <!-- Block 2 -->
+          <div class="journal-card journal-card--secondary" data-aos data-aos-delay="100">
+            <div class="journal-icon" aria-hidden="true">🌊</div>
+            <h3 class="journal-card-title">Những khó khăn gặp phải</h3>
+            <p class="journal-card-text">
+              Thử thách lớn nhất của tôi là bài tập về <strong>Liêm chính học thuật</strong>.
+              Ranh giới giữa "sử dụng AI hỗ trợ" và "dựa dẫm vào AI" nhiều lúc rất mong manh,
+              và tôi đã phải thành thật với bản thân để không vượt qua ranh giới đó.
+            </p>
+            <p class="journal-card-text">
+              Bài tập về làm việc nhóm cũng là một thử thách thú vị — không phải về mặt kỹ thuật,
+              mà là về <strong>kỹ năng giao tiếp bất đồng bộ</strong>.
+              Học cách viết tin nhắn rõ ràng, để lại ghi chú đầy đủ cho đồng đội
+              là những kỹ năng mềm mà tôi chưa từng được dạy một cách bài bản.
+            </p>
+          </div>
+
+          <!-- Block 3 -->
+          <div class="journal-card journal-card--tertiary" data-aos data-aos-delay="200">
+            <div class="journal-icon" aria-hidden="true">✦</div>
+            <h3 class="journal-card-title">Định hướng phát triển</h3>
+            <p class="journal-card-text">
+              Tôi muốn tiếp tục đào sâu vào <strong>Prompt Engineering</strong> —
+              không chỉ cho việc học mà còn cho nghiên cứu ngôn ngữ học,
+              lĩnh vực mà tôi đang theo đuổi. Ứng dụng AI trong phân tích văn bản,
+              dịch thuật tự động và nghiên cứu ngữ liệu là con đường tôi muốn khám phá.
+            </p>
+            <p class="journal-card-text">
+              Quan trọng hơn, tôi muốn xây dựng thói quen <strong>tư duy phản biện với thông tin số</strong> —
+              không dễ tin, không dễ bác bỏ, luôn đặt câu hỏi về nguồn gốc và mục đích.
+              Đó là di sản quý giá nhất mà môn học này để lại.
+            </p>
+          </div>
+
+        </div><!-- /journal-grid -->
+
+        <!-- Pull quote -->
+        <blockquote class="journal-quote" data-aos>
+          <span class="quote-mark">"</span>
+          <p>Học phần Nhập môn Công nghệ số - Ứng dụng trí tuệ nhân tạo đã làm thay đổi hoàn toàn góc nhìn của tôi: AI không phải là sự thay thế, mà là một "người cộng sự" đắc lực. Đối với lĩnh vực Quốc tế học và Đổi mới toàn cầu, tôi nhận ra sự kết hợp giữa lăng kính nhân văn của khoa học xã hội và sức mạnh phân tích dữ liệu của AI chính là chìa khóa để kiến tạo các giải pháp phát triển bền vững.</p>
+          <cite>— Cảm nhận cá nhân sau khóa học</cite>
+        </blockquote>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="logo-mark">✦</span>
+        <span class="footer-brand-name">Digital Portfolio</span>
+      </div>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2025–2026 Lê Thị Uyên ·  Trường Đại học Việt Nhật
+        </p>
+        <p class="footer-integrity">
+          <span class="integrity-icon">⚖</span>
+          Mọi nội dung trong portfolio này tuân thủ nguyên tắc liêm chính học thuật.
+          AI được sử dụng như công cụ hỗ trợ, không thay thế tư duy và sáng tạo cá nhân.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!--
+    type="module" → cho phép dùng import/export ES6
+    defer ngầm định → script chạy sau khi HTML parse xong (an toàn với DOMContentLoaded)
+  -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
